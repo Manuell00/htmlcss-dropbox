@@ -1,8 +1,175 @@
 /* Regole generali della pagina */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.button{
+    color: white;
+    background-color:dodgerblue;
+    padding: 7px 12px;
+}
+
+.button:hover {
+    box-shadow: 5px 5px rgb(29, 112, 195);
+    cursor: pointer;
+}
+
+ul a {
+    text-decoration: none;
+    color: grey;
+}
 /* Inserisco lo stile dell'header */
+
+nav{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-size: 13px;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 30px;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    padding: 20px 0;
+    border-bottom: solid 3px black;
+    transition: all 0.2s linear;
+}
+
+#droplogo{
+    width: 100px;
+    height: auto;
+}
+
+
+/* Inserisco lo stile del main */
+main{
+    margin-top: 80px;
+}
+
+/* Inserisco lo stile del jumbotron */
+/* Definisco la grandezza del jumbotron */
+#jumbotron{
+    height: 600px;
+    width: 100%;
+    background-color:#b4c8e1; 
+    position: relative;
+    
+}
+
+/* Inserisco 3 contenitori, due dei quali saranno utili per evidenziare la linea bianca finale e uno per inserire il contenuto de jumbotron */
+
+#jumbotron-left-container{
+    background-color: white;
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    top:calc(100% - 50px);
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+#jumbotron-container{
+    padding-top: 50px;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#jumbotron-right-container{
+    background-color: white;
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    top:calc(100% - 50px);
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+/* Definisco lo stile del contenitore centrale del jumbotron */
+
+#jumbotron-container h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+
+#jumbotron-content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;  
+}
+
+
+#jumbotron-text{
+    font-size: 13px;
+    width: 30%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+#jumbotron-image{
+    width: 70%; 
+    height: 110%;
+    z-index: 200;
+}
+
+#jumbotron-image img{
+    max-height: 150%;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+#jumbotron-arrow{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+#line-white{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+/* Inserisco lo stile della prima section del main */

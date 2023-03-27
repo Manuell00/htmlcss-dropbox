@@ -8,6 +8,13 @@
     <!-- Inserisco il cdn di font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Importo il font di Google nella pagina -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Noto+Sans:wght@200;400;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+
     <!-- Inserisco il title della mia pagina -->
     <title>Dropbox</title>
 
@@ -23,13 +30,64 @@
     <header>
         <!-- Barra di navigazione -->
         <nav>
+            <div class="nav-container">
+                <img id="droplogo" src="img/logo-small.png" alt="Logo con scritta dropobox">
+                <ul class="menu">
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e Prezzi</a></li>
+                </ul>
+            </div>
 
+            <div class="nav-container">
+                <ul class="menu">
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">Conttta l'ufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                </ul>
+                <span class="button">Inizia</span>
+            </div>
         </nav>
     </header>
 
     <!-- Inserisco il main -->
     <main>
         <!-- Jumbotron -->
+        <div id="jumbotron">
+
+            <!-- Inserisco questi due piccoli contenitori dallo sfondo bianco che mi serviranno per evidenziare l'immagine nella sua parte finale -->
+            <div id="jumbotron-left-container"></div>
+            <div id="jumbotron-right-container"></div>
+
+            <!-- Definisco il container centrale del jumbotron -->
+            <div id="jumbotron-container">
+                <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+
+                <!-- Definisco un contenitore dei contenuti sotto al titolo del jumbotron -->
+                <div id="jumbotron-content">
+
+                    <!-- Contenitore del testo de jumbotron -->
+                    <div id="jumbotron-text">
+                        <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro : è un modo intelligente e integrato per ottimizzare il flusso del lavoro esistente.</p>
+
+                        <div class="button"> Inizia la tua prova gratuita</div>
+
+                        <p>Annulla in qualsiasi momento</p>
+
+                        <div id="jumbotron-arrow"><i class="fa-sharp fa-solid fa-arrow-down"></i></div>
+
+                    </div>
+
+                    <!-- Contenitore dell'immagine del jumbotron -->
+                    <div id="jumbotron-image">
+                        <img src="img/jumbo.png" alt="">
+                    </div>
+
+                    <!-- Definisco una linea bianca da inserire nella parte finale del container -->
+                    <div id="line-white"></div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Corpo del main (tutto stessa larghezza) -->
