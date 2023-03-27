@@ -10,6 +10,7 @@
     background-color:dodgerblue;
     color: white;
     padding: 7px 12px;
+    text-align: center;
 }
 
 .button:hover {
@@ -178,7 +179,7 @@ main{
 /* Inserisco lo stile per le section contenute all'interno del main */
 
 .main-container{
-    width: 50%;
+    width: 55%;
     height: auto;
     margin: 0 auto;
 }
@@ -212,18 +213,42 @@ main{
 
 .box{
     width: 30%;
-    height: 500px;
-    background-color:antiquewhite;
-    border: 1px solid black ;
+    height: auto;
+    border: 1px solid lightgrey ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding-bottom: 50px;
+    font-size: 13px;
 }
 
-.box .type{
+.box-type{
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgrey;
     padding: 10px 0;
 }
 
 .box-text{
-    padding: 25px 15px;
-
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
+
+.line{
+    height: 30px;
+    width: 30%;
+    border-bottom: 3px solid lightgrey;
+}
+
+.frequency{
+    color: grey;
+}
+
+.fa-check{
+    color: dodgerblue;
+}
+
+/* Inserisco lo stile per la terza section */
