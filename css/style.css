@@ -7,8 +7,8 @@
 }
 
 .button{
-    color: white;
     background-color:dodgerblue;
+    color: white;
     padding: 7px 12px;
 }
 
@@ -24,18 +24,18 @@ ul a {
 /* Inserisco lo stile dell'header */
 
 nav{
-    z-index: 100;
     position: fixed;
     top: 0;
     width: 100%;
     height: 80px;
     background-color: white;
+    font-size: 13px;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
-    font-size: 13px;
 }
 
 .nav-container{
@@ -51,11 +51,11 @@ nav{
 .menu{
     list-style-type: none;
     display: flex;
-    gap: 30px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
+    gap: 30px;
 }
 
 .menu li:hover {
@@ -89,29 +89,29 @@ main{
 /* Inserisco 3 contenitori, due dei quali saranno utili per evidenziare la linea bianca finale e uno per inserire il contenuto de jumbotron */
 
 #jumbotron-left-container{
-    background-color: white;
-    position: absolute;
     width: 40%;
     height: 100px;
+    background-color: white;
+    position: absolute;
     top:calc(100% - 50px);
     left: 0%;
     transform: translate(-50%, -50%);
 }
 #jumbotron-container{
-    padding-top: 50px;
     width: 60%;
     height: 100%;
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-top: 50px;
 }
 
 #jumbotron-right-container{
-    background-color: white;
-    position: absolute;
     width: 40%;
     height: 100px;
+    background-color: white;
+    position: absolute;
     top:calc(100% - 50px);
     left: 100%;
     transform: translate(-50%, -50%);
@@ -126,18 +126,18 @@ main{
 
 
 #jumbotron-content{
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;  
+    margin-top: 30px;
 }
 
 
 #jumbotron-text{
-    font-size: 13px;
     width: 30%; 
     height: 100%;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -172,4 +172,58 @@ main{
     z-index: 1;
 }
 
-/* Inserisco lo stile della prima section del main */
+
+
+
+/* Inserisco lo stile per le section contenute all'interno del main */
+
+.main-container{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-container h2{
+    font-size: 28px;
+    margin: 50px 0;
+}
+
+/* Inserisco lo stile per il form */
+
+.radio-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+/* Inserisco lo stile della seconda section */
+
+.container-choice{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: calc(100% - 90%)/2;
+}
+
+.box{
+    width: 30%;
+    height: 500px;
+    background-color:antiquewhite;
+    border: 1px solid black ;
+}
+
+.box .type{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+.box-text{
+    padding: 25px 15px;
+
+}
