@@ -6,21 +6,39 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.button{
+.blue-button{
     background-color:dodgerblue;
     color: white;
     padding: 7px 12px;
     text-align: center;
 }
 
-.button:hover {
+.grey-button{
+    width: 50%;
+    background-color:white;
+    color: grey;
+    border:1px solid grey;
+    padding: 7px 0px;
+    text-align: center;
+}
+
+.blue-button:hover {
     box-shadow: 5px 5px rgb(29, 112, 195);
+    cursor: pointer;
+}
+
+.grey-button:hover {
+    box-shadow: 5px 5px dimgrey;
     cursor: pointer;
 }
 
 ul a {
     text-decoration: none;
-    color: grey;
+    color: dimgrey;
+}
+
+p{
+    color:dimgrey;
 }
 /* Inserisco lo stile dell'header */
 
@@ -209,6 +227,7 @@ main{
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: calc(100% - 90%)/2;
+    margin-bottom: 50px;
 }
 
 .box{
@@ -252,3 +271,69 @@ main{
 }
 
 /* Inserisco lo stile per la terza section */
+
+.large-box{
+    font-size: 13px;
+    width: 100%;
+    height: auto;
+    border: 1px solid lightgrey;
+    margin-bottom: 100px;
+}
+
+.large-box-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 30px 0;
+    font-size: 13px;
+}
+
+
+
+/* Inserisco lo stile della quarta section */
+.large-box-no-border{
+    font-size: 13px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 130px;
+}
+
+.large-box-image{
+    width: 300%;
+    height: 100%;
+}
+
+.large-box-image img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.box-text-no-border{
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+/* Inserisco lo stile per la quinta section */
+.large-box-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-size: 13px;
+}
+
+.large-box-card {
+    width:29%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 40px;
+    font-size: 13px;
+}
+
