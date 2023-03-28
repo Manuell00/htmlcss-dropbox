@@ -6,24 +6,24 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.blue-button{
-    background-color:dodgerblue;
+.blue-button {
+    background-color: dodgerblue;
     color: white;
     padding: 7px 12px;
     text-align: center;
 }
 
-.white-button{
-    background-color:white;
+.white-button {
+    background-color: white;
     color: grey;
     padding: 7px 10px;
     text-align: center;
 }
 
-.grey-button{
-    background-color:white;
+.grey-button {
+    background-color: white;
     color: grey;
-    border:1px solid grey;
+    border: 1px solid grey;
     padding: 7px 0px;
     text-align: center;
 }
@@ -37,6 +37,7 @@
     box-shadow: 5px 5px dimgrey;
     cursor: pointer;
 }
+
 .white-button:hover {
     box-shadow: 5px 5px dimgrey;
     cursor: pointer;
@@ -47,17 +48,18 @@ ul a {
     color: dimgrey;
 }
 
-p{
-    color:dimgrey;
+p {
+    color: dimgrey;
 }
 
 /* Vista la numerosa presenza di item con width 50% inserisco questa semplice classe che potrebbe tornarmi utile in alcune situazioni */
-.meta{
+.meta {
     width: 50%;
 }
+
 /* Inserisco lo stile dell'header */
 
-nav{
+nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -72,7 +74,7 @@ nav{
     flex-direction: row;
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +84,7 @@ nav{
     margin: 0 30px;
 }
 
-.menu{
+.menu {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -99,103 +101,104 @@ nav{
     transition: all 0.2s linear;
 }
 
-#droplogo{
+#droplogo {
     width: 100px;
     height: auto;
 }
 
 
 /* Inserisco lo stile del main */
-main{
+main {
     margin-top: 80px;
 }
 
 /* Inserisco lo stile del jumbotron */
 /* Definisco la grandezza del jumbotron */
-#jumbotron{
+#jumbotron {
     height: 600px;
     width: 100%;
-    background-color:#b4c8e1; 
+    background-color: #b4c8e1;
     position: relative;
-    
+
 }
 
 /* Inserisco 3 contenitori, due dei quali saranno utili per evidenziare la linea bianca finale e uno per inserire il contenuto de jumbotron */
 
-#jumbotron-left-container{
+#jumbotron-left-container {
     width: 20%;
     height: 15%;
     background-color: white;
     position: absolute;
-    top:calc(100% - 15%);
+    top: calc(100% - 15%);
     left: 0%;
 }
-#jumbotron-container{
+
+#jumbotron-container {
     width: 60%;
     height: 100%;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 50px;
 }
 
-#jumbotron-right-container{
+#jumbotron-right-container {
     width: 20%;
     height: 15%;
     background-color: white;
     position: absolute;
-    top:calc(100% - 15%);
+    top: calc(100% - 15%);
     left: calc(100% - 20%);
 }
 
 /* Definisco lo stile del contenitore centrale del jumbotron */
 
-#jumbotron-container h1{
+#jumbotron-container h1 {
     font-size: 50px;
     font-weight: 800;
 }
 
 
-#jumbotron-content{
+#jumbotron-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;  
+    justify-content: space-between;
     margin-top: 30px;
 }
 
 
-#jumbotron-text{
-    width: 30%; 
+#jumbotron-text {
+    width: 30%;
     height: 100%;
     font-size: 13px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between; 
-    gap: 20px; 
+    justify-content: space-between;
+    gap: 20px;
 }
 
-#jumbotron-image{
-    max-width: 70%; 
+#jumbotron-image {
+    max-width: 70%;
     max-height: 100%;
     z-index: 200;
 }
 
-#jumbotron-image img{
+#jumbotron-image img {
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
-    
+
 }
 
-#jumbotron-arrow{
+#jumbotron-arrow {
     font-size: 40px;
     margin: 10px 0;
 }
 
-#line-white{
+#line-white {
     height: 15%;
     width: 100%;
     background-color: white;
@@ -209,20 +212,20 @@ main{
 
 /* Inserisco lo stile per le section contenute all'interno del main */
 
-.main-container{
+.main-container {
     width: 55%;
     height: auto;
     margin: 0 auto;
 }
 
-.main-container h2{
+.main-container h2 {
     font-size: 28px;
     margin: 50px 0;
 }
 
 /* Inserisco lo stile per il form (Tipologia di fatturazione) */
 
-.radio-button{
+.radio-button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -232,7 +235,7 @@ main{
 
 /* Inserisco lo stile della seconda section (3 colonne) */
 
-.container-choice{
+.container-choice {
     width: 100%;
     height: auto;
     display: flex;
@@ -243,10 +246,10 @@ main{
     margin-bottom: 50px;
 }
 
-.box{
+.box {
     width: 30%;
     height: auto;
-    border: 1px solid lightgrey ;
+    border: 1px solid lightgrey;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -255,13 +258,13 @@ main{
     font-size: 13px;
 }
 
-.box-type{
+.box-type {
     text-align: center;
     border-bottom: 1px solid lightgrey;
     padding: 10px 0;
 }
 
-.box-text{
+.box-text {
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -269,23 +272,23 @@ main{
     gap: 20px;
 }
 
-.line{
+.line {
     height: 30px;
     width: 30%;
     border-bottom: 3px solid lightgrey;
 }
 
-.frequency{
+.frequency {
     color: grey;
 }
 
-.fa-check{
+.fa-check {
     color: dodgerblue;
 }
 
 /* Inserisco lo stile per la terza section (Box Larga) */
 
-.large-box{
+.large-box {
     font-size: 13px;
     width: 100%;
     height: auto;
@@ -293,7 +296,7 @@ main{
     margin-bottom: 100px;
 }
 
-.large-box-content{
+.large-box-content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -305,25 +308,25 @@ main{
 
 
 /* Inserisco lo stile della quarta section (Immagine + descrizione) */
-.large-box-no-border{
+.large-box-no-border {
     font-size: 13px;
     width: 100%;
     height: auto;
     margin-bottom: 130px;
 }
 
-.large-box-image{
+.large-box-image {
     width: 300%;
     height: 100%;
 }
 
-.large-box-image img{
+.large-box-image img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
-.box-text-no-border{
+.box-text-no-border {
     padding: 30px 35px;
     display: flex;
     flex-direction: column;
@@ -332,7 +335,7 @@ main{
 }
 
 /* Inserisco lo stile per la quinta section (Griglia cards) */
-.large-box-grid{
+.large-box-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -341,7 +344,7 @@ main{
 }
 
 .large-box-card {
-    width:29%;
+    width: 29%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -351,7 +354,7 @@ main{
 }
 
 /* Inserisco lo stile per quinta section (Titolo + link) */
-.large-box-no-border-meta{
+.large-box-no-border-meta {
     font-size: 13px;
     width: 60%;
     height: auto;
@@ -359,7 +362,7 @@ main{
 }
 
 /* Inserisco lo stile per la sesta section (Immagini Aziende) */
-.fullscreen{
+.fullscreen {
     width: 100vw;
     height: 500px;
     display: flex;
@@ -371,7 +374,7 @@ main{
 
 }
 
-.fullscreen-box{
+.fullscreen-box {
     width: calc(100%/3);
     height: 100%;
     display: flex;
@@ -379,7 +382,7 @@ main{
     flex-wrap: wrap;
 }
 
-.fullscreen-box-description{
+.fullscreen-box-description {
     width: calc(100vw - (100%/3*2));
     height: 100%;
     padding: 50px 30px;
@@ -392,23 +395,23 @@ main{
     overflow: auto;
 }
 
-.fullscreen-box-description-image{
-    width: 50%  ;
+.fullscreen-box-description-image {
+    width: 50%;
     padding-bottom: 20px;
     border-bottom: 2px solid lightgrey;
 }
 
-.fullscreen-box-description img{
+.fullscreen-box-description img {
     max-width: 100%;
 }
 
-.fullscreen-box-img{
+.fullscreen-box-img {
     width: calc(100%/2);
-    height:  calc(100%/2);
+    height: calc(100%/2);
     position: relative;
 }
 
-.fullscreen-box-img img{
+.fullscreen-box-img img {
     max-width: 50%;
     max-height: auto;
     position: absolute;
@@ -418,42 +421,51 @@ main{
     color: white;
 }
 
-.red{
+.red {
     background-color: red;
 }
-.crimson{
-    background-color:crimson;
+
+.crimson {
+    background-color: crimson;
 }
-.skyblue{
-    background-color:skyblue;
+
+.skyblue {
+    background-color: skyblue;
 }
-.darkred{
-    background-color:darkred;
+
+.darkred {
+    background-color: darkred;
 }
-.lightgreen{
-    background-color:lightgreen;
+
+.lightgreen {
+    background-color: lightgreen;
 }
-.aliceblue{
-    background-color:aliceblue;
+
+.aliceblue {
+    background-color: aliceblue;
 }
-.blue{
+
+.blue {
     background-color: blue;
 }
-.yellow{
+
+.yellow {
     background-color: yellow;
 }
-.deepskyblue{
-    background-color:deepskyblue;
+
+.deepskyblue {
+    background-color: deepskyblue;
 }
 
 /* Inserisco lo stile per la parte adiacente sottostante */
-.fullscreen-under{
+.fullscreen-under {
     width: 100%;
     height: 300px;
     background-color: skyblue;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
-.fullscreen-under-container{
+
+.fullscreen-under-container {
     width: 55%;
     height: 300px;
     margin: 0 auto;
@@ -461,12 +473,11 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-size: 13px;
-    gap: 60px;
 }
 
-.fullscreen-under-title-container{
+.fullscreen-under-title-container {
     width: 400px;
     height: auto;
     font-size: 20px;
@@ -474,27 +485,38 @@ main{
 }
 
 /* Inserisco lo stile per l'ultima section (Domande frequenti) */
-.ask{
+.ask {
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 }
 
-.ask-box-title{
+.ask-box-title {
     font-size: 20px;
     color: black;
     padding: 10px 0;
     border-bottom: 1px solid grey;
 }
 
-.ask-box{
+.ask-box {
     width: 100%;
     height: auto;
     font-size: 13px;
     padding: 30px 0;
-    border-bottom: 1px solid grey;    
+    border-bottom: 1px solid grey;
 }
 
-.ask-box-explication{
+.ask-box-display {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ask-box-explication {
     font-size: 15px;
     padding: 10px 0;
     display: none;
@@ -502,7 +524,48 @@ main{
     opacity: 0;
 }
 
-.ask-box:hover .ask-box-explication{
+.ask-box:hover .ask-box-explication {
     opacity: 1;
     display: block;
+}
+
+/* Inserisco lo stile del footer */
+
+.footer-container {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 600px;
+
+}
+
+.footer-display {
+    padding-top: 100px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.card-footer {
+    color: white;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 70px;
+}
+
+.space-footer {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
 }
