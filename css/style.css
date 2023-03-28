@@ -14,7 +14,6 @@
 }
 
 .grey-button{
-    width: 50%;
     background-color:white;
     color: grey;
     border:1px solid grey;
@@ -39,6 +38,11 @@ ul a {
 
 p{
     color:dimgrey;
+}
+
+/* Vista la numerosa presenza di item con width 50% inserisco questa semplice classe che potrebbe tornarmi utile in alcune situazioni */
+.meta{
+    width: 50%;
 }
 /* Inserisco lo stile dell'header */
 
@@ -108,13 +112,12 @@ main{
 /* Inserisco 3 contenitori, due dei quali saranno utili per evidenziare la linea bianca finale e uno per inserire il contenuto de jumbotron */
 
 #jumbotron-left-container{
-    width: 40%;
+    width: 20%;
     height: 100px;
     background-color: white;
     position: absolute;
-    top:calc(100% - 50px);
+    top:calc(100% - 100px);
     left: 0%;
-    transform: translate(-50%, -50%);
 }
 #jumbotron-container{
     width: 60%;
@@ -127,13 +130,12 @@ main{
 }
 
 #jumbotron-right-container{
-    width: 40%;
+    width: 20%;
     height: 100px;
     background-color: white;
     position: absolute;
-    top:calc(100% - 50px);
-    left: 100%;
-    transform: translate(-50%, -50%);
+    top:calc(100% - 100px);
+    left: calc(100% - 20%);
 }
 
 /* Definisco lo stile del contenitore centrale del jumbotron */
@@ -207,7 +209,7 @@ main{
     margin: 50px 0;
 }
 
-/* Inserisco lo stile per il form */
+/* Inserisco lo stile per il form (Tipologia di fatturazione) */
 
 .radio-button{
     display: flex;
@@ -217,7 +219,7 @@ main{
     margin-bottom: 70px;
 }
 
-/* Inserisco lo stile della seconda section */
+/* Inserisco lo stile della seconda section (3 colonne) */
 
 .container-choice{
     width: 100%;
@@ -270,7 +272,7 @@ main{
     color: dodgerblue;
 }
 
-/* Inserisco lo stile per la terza section */
+/* Inserisco lo stile per la terza section (Box Larga) */
 
 .large-box{
     font-size: 13px;
@@ -291,7 +293,7 @@ main{
 
 
 
-/* Inserisco lo stile della quarta section */
+/* Inserisco lo stile della quarta section (Immagine + descrizione) */
 .large-box-no-border{
     font-size: 13px;
     width: 100%;
@@ -318,7 +320,7 @@ main{
     gap: 20px;
 }
 
-/* Inserisco lo stile per la quinta section */
+/* Inserisco lo stile per la quinta section (Griglia cards) */
 .large-box-grid{
     display: flex;
     flex-direction: row;
@@ -337,3 +339,51 @@ main{
     font-size: 13px;
 }
 
+/* Inserisco lo stile per quinta section (Titolo + link) */
+.large-box-no-border-meta{
+    font-size: 13px;
+    width: 60%;
+    height: auto;
+    margin-bottom: 130px;
+}
+
+/* Inserisco lo stile per la sesta section (Immagini Aziende) */
+.fullscreen{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+
+}
+
+.fullscreen-box{
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fullscreen-box-description{
+    width: calc(100vw - (100%/3*2));
+    height: 100%;
+    background-color: bisque;
+}
+
+.fullscreen-box-img{
+    width: calc(100%/2);
+    height:  calc(100%/2);
+    position: relative;
+}
+
+.fullscreen-box-img img{
+    max-width: 50%;
+    max-height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+}
