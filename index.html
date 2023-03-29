@@ -34,9 +34,14 @@
     <header>
         <!-- Barra di navigazione -->
         <nav>
+            <!-- Creo un container per la navbar -->
             <div class="nav-container">
+                <!-- Inserisco il logo di dropbox -->
                 <img id="droplogo" src="img/logo-small.png" alt="Logo con scritta dropobox">
+                
+                <!-- Creo una classe menu con all'interno la lista dei miei elementi -->
                 <ul class="menu">
+                    <!-- Inserisco il tag li e successivamente metto un ul chiamato dropdown che mostrerà in pagina un dropdown sotto l'elemento interno al tag li -->
                     <li><a href="#">Perchè Dropbox   <i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown">
                             <li><a href="#">Prezzo conveniente</a></li>
@@ -142,10 +147,12 @@
 
                 <!-- Box numero 1 -->
                 <div class="box">
+                    <!-- La classe box type mi serve per identificare la parte iniziale con la categoria di proposta -->
                     <div class="box-type">
                         <i class="fa-solid fa-user"></i> Singolo
                     </div>
 
+                    <!-- Il box-text è una classe utile per il flex del contenitore in cui è contenuto -->
                     <div class="box-text">
                         <h3>Professional</h3>
                         <span class="price">$ 12.00</span>
@@ -249,7 +256,6 @@
 
 
             <!--Inserisco il blocco Largo -->
-
             <section>
                 <div class="large-box">
                     <div class="box-type">
@@ -415,6 +421,7 @@
                         <h4>Qual è la differenza tra Dropbox business Standard e Dropbox Business Advanced</h4>
                         <span><i class="fa-solid fa-sort-down"></i></span>
                     </div>
+                    <!-- Questa classe serve per rispondere alla domanda quando si va in hover-->
                     <div class="ask-box-explication">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi illum quas harum rerum
                             numquam architecto, suscipit quo, doloremque itaque necessitatibus expedita laboriosam aut
@@ -463,8 +470,12 @@
 
     <!-- Inserisco il footer -->
     <footer>
+        <!-- Inserisco un container per il footer -->
         <div class="footer-container">
+            <!-- Inserisco un ulteriore contenitore per disporre in flex le mie cards -->
             <div class="footer-display">
+
+                <!-- Creo una cards che sarebbe sostanzialmente una colonna delle 5 presenti ne mio footer -->
                 <div class="card-footer">
                     <h2>Dropbox</h2>
                     <span>Applicazioni desktop</span>
@@ -515,9 +526,6 @@
             </div>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>
