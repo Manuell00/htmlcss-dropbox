@@ -94,9 +94,9 @@ nav {
     gap: 30px;
 }
 
-.menu li:hover {
+.menu > li:hover {
     cursor: pointer;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: solid 3px black;
     transition: all 0.2s linear;
 }
@@ -107,29 +107,29 @@ nav {
 }
 
 /* Inserisco lo stile per il dropdown */
-.dropdown {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
+
+.menu li:hover .dropdown > li{
+    display: block;
+    top: 0;
 }
 
-.dropdown .dropbtn {
-    height: auto;
-    font-size: 13px;  
-    border: none;
-    outline: none;
+.dropdown li{
+    text-align: center;
+    z-index: 1;
+    width: 120px;
+    border: 1px solid grey;
     background-color: white;
     color: grey;
-}
-
-.dropdown-content {
+    padding: 10px 10px;
     display: none;
-    z-index: 1;
-    flex-direction: column;
+    position: relative;
 }
-  
-.dropdown:hover > .dropdown-content {
+.dropdown{
+    position: absolute;
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 12px;
 }
 
 /* Inserisco lo stile del main */
@@ -166,6 +166,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 50px;
+    z-index: 0;
 }
 
 #jumbotron-right-container {
