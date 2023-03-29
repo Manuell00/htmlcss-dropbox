@@ -106,6 +106,31 @@ nav {
     height: auto;
 }
 
+/* Inserisco lo stile per il dropdown */
+.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+
+.dropdown .dropbtn {
+    height: auto;
+    font-size: 13px;  
+    border: none;
+    outline: none;
+    background-color: white;
+    color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+}
+  
+.dropdown:hover > .dropdown-content {
+    display: flex;
+}
 
 /* Inserisco lo stile del main */
 main {
