@@ -181,7 +181,7 @@ main {
 }
 
 #jumbotron-image {
-    max-width: 70%;
+    max-width: 600px;
     max-height: 100%;
     z-index: 200;
 }
@@ -265,7 +265,7 @@ main {
 }
 
 .box-text {
-    padding: 0 15px;
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -276,6 +276,10 @@ main {
     height: 30px;
     width: 30%;
     border-bottom: 3px solid lightgrey;
+}
+
+.price{
+    font-weight: 600;
 }
 
 .frequency {
@@ -316,7 +320,7 @@ main {
 }
 
 .large-box-image {
-    width: 300%;
+    width: 2500px;
     height: 100%;
 }
 
@@ -327,7 +331,7 @@ main {
 }
 
 .box-text-no-border {
-    padding: 30px 35px;
+    padding: 30px 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -363,8 +367,8 @@ main {
 
 /* Inserisco lo stile per la sesta section (Immagini Aziende) */
 .fullscreen {
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -383,7 +387,7 @@ main {
 }
 
 .fullscreen-box-description {
-    width: calc(100vw - (100%/3*2));
+    width: calc(100% - (100%/3*2));
     height: 100%;
     padding: 50px 30px;
     display: flex;
@@ -412,15 +416,15 @@ main {
 }
 
 .fullscreen-box-img img {
+    filter: invert(100%);
     max-width: 50%;
-    max-height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
 }
 
+/* Inserisco le classi per i colori dei quadrati */
 .red {
     background-color: red;
 }
@@ -439,6 +443,7 @@ main {
 
 .lightgreen {
     background-color: lightgreen;
+    border: 15px solid #ddfada ;
 }
 
 .aliceblue {
@@ -553,6 +558,7 @@ main {
 
 .card-footer {
     color: white;
+    font-size: 13px;
     width: auto;
     height: auto;
     display: flex;
